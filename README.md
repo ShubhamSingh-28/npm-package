@@ -1,11 +1,8 @@
 # Currency-converter
 
-Help secure Express apps by setting HTTP response headers.
-
+Help to change currency with one-line of code.
 ```javascript
-import helmet from "helmet";
+import ChangeCurrency  from "helmet";
 
-const app = express();
-
-app.use(helmet());
+ChangeCurrency("USD","INR",10).then(res=>console.log(res));
 ```
